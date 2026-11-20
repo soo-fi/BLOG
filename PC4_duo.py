@@ -204,9 +204,11 @@ else:
                     html_content = mapa_S.read()
         
         components.html(html_content,height=600)
+
+    #gráficos Yasuri
     
     if grafico_seleccionado == 'Nube de palabras':
-        st.subheader("☁️ Wordcloud - Yasuri")
+        st.subheader("☁️ Wordcloud La vegetariana")
         texto_10 = """
         Este Wordcloud muestra la primera parte del libro La vegetariana (Hang Kang), las palabras mas grandes son las palabras que se repiten constantemente y las palabras mas pequeñas las que menos se repiten. Para crear este Wordcloud, primero se depuró el texto quitándole los stopwords, signos de puntuación y convirtiendo el texto a minúsculas.
         """
@@ -219,7 +221,7 @@ else:
         
 
     elif grafico_seleccionado == 'Histograma':
-        st.subheader("📊 Gráfico 2: Histograma - Yasuri")
+        st.subheader("📊 Histograma ATHM")
         texto_11 = """
         El histograma muestra la distribución de los goles anotados como Local y  goles recibidos como Visitante del equipo Athlético Madrid. Anotaron más goles de los que recibieron. 
         """
@@ -228,9 +230,32 @@ else:
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
             st.image("histograma.png", width=800)
+
+    elif grafico_seleccionado == 'Pastel':
+        st.subheader("📊 Gráfico de pastel ATHM")
+        texto_7 = """
+        El gráfico de pastel muestra en procentajes el rendimiento del Athlético Madrid durante la temporada 2025-2026. Los resultados muestran que el equipo ganó mas del 50% de los partidos de la temporada, tuvo algunos partidos pérdidos y un porcentaje bajo de partidos empatados. 
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
+                
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+             st.image("pastel_Barcelona.png", width=1000)
+
+    elif grafico_seleccionado == 'Gráfico de barras':
+        st.subheader("📊 Gráfico de barras ATHM")
+        texto_8 = """
+       El gráfico de barras muestra el promedio de tarjetas amarrillas que el Athlético Madrid obtuvo durante la temporada 2025-26 como equipo visitante. Los resultados solo varían entre 2 y 3 tarjetas amarillas en promedio. 
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+        
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+                st.image("grafico_barras_s.png", width=1000)
+        
     
     else:
-        st.subheader("🗺️ Mapa 1: Distribución geográfica - Yasuri")
+        st.subheader("🗺️ Distribución geográfica HAMILTON PEREZ")
         texto_12 = """
         El mapa muestra el lugar de nacimiento de los pilotos L. Hamilton (Inglaterra) y L. Perez (México), con algunos datos como el nombre del piloto, el nombre de la escudería, el puntaje total que iobtuvieron en el F1-2016 y una imagen de de ellos. 
         """
