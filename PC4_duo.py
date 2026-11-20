@@ -22,7 +22,7 @@ opciones_2 = option_menu(
     menu_icon="cast", default_index=0, orientation="horizontal") # none
 
 if opciones_2 == 'Presentación':
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Diario de código</h1>", unsafe_allow_html=True) #editar aspecto del texto / título del blog
+    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'> 🪶 Diario de código 🪶</h1>", unsafe_allow_html=True) #editar aspecto del texto / título del blog
 
     # Alumno a
     col1, col2 = st.columns(2)
@@ -45,11 +45,11 @@ if opciones_2 == 'Presentación':
     """
     col1.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
     
-    col2.image("DSC_0135.HEC", caption='Yas', width=300)
+    col2.image("ft_yasuri.png", caption='Yas', width=300)
     
 elif  opciones_2 == 'Experiencia':
 
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nuestra experiencia y videos 💻</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nuestra experiencia y videos</h1>", unsafe_allow_html=True)
 
     # Alumno a
     texto_3 = """ Antes de llevar este curso no conocía mucho del lenguaje de programación, lo asociaba
@@ -68,7 +68,7 @@ elif  opciones_2 == 'Experiencia':
     
     # Formato Google Drive
     # Video 1 - Sofia
-    st.subheader("🎥 String y listas - S")
+    st.subheader("🎥 Video 1: String y listas - Sofía")
 
     col1, col2, col3 = st.columns([1, 2, 1])
 
@@ -90,7 +90,7 @@ elif  opciones_2 == 'Experiencia':
         
     # Formato Google Drive
     # VIDEO 2 - Yasuri
-    st.subheader("🎥 Strings y listas - Y")
+    st.subheader("🎥 Video 2: Strings y listas - Yasuri")
     
     col1, col2, col3 = st.columns([1, 2, 1])
     
@@ -102,7 +102,7 @@ elif  opciones_2 == 'Experiencia':
         
     # Formato Google Drive
     # VIDEO 3 - Yasuri y Sofia
-    st.subheader("🎥 Estructuras condicionales - Y y S")
+    st.subheader("🎥 Video 3: Estructuras condicionales - Sofía y Yasuri")
     
     col1, col2, col3 = st.columns([1, 2, 1])
     
@@ -115,7 +115,7 @@ elif  opciones_2 == 'Experiencia':
             
 else:
 
-    st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>Nombre a la sección</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>Nuestros trabajos</h1>", unsafe_allow_html=True)
     
     # Aquí todos los integrantes deben poner sus 3 gráficos y su mapa en la lista 
     # y aumentar la estructura condicional como sea necesaria
@@ -134,7 +134,7 @@ else:
             
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-            st.image("wordcloud_s.png", width=1500)
+            st.image("wordcloud_THG.png", width=1500)
             
     
     elif grafico_seleccionado == 'Histograma':
@@ -185,30 +185,22 @@ else:
                 st.image("grafico_barras_s.png", width=1000)
         
     else:
-        st.subheader("🗺️ Mapa 1: Pilotos Hamilton y Bottas de la Fórmula 1")
+        st.subheader("🗺️ Mapa 1: Pilotos Hamilton y Bottas - Fórmula 1 Temporada 2016")
         texto_9 = """
         El mapa muestra los lugares de nacimiento de los pilotos Hamilton y Bottas de la Fórmula 1. 
-        La presentación de la ventana popup muestra el nombre del piloto en el encabezado 1 en negrita, luego la escudería y el puntaje total. 
-        Elegí presentar los datos en este orden porque me pareció adecuado según prioridad de los datos y porque facilita la visualización el poder ver 
-        la foto y nombre primero para ubicar rápidamente al personaje. Además, elegí presentar el dato de la escudería y el puntaje dentro de una frase 
-        string cada una para especificar qué información era (es decir, que no solo se muestre el número del puntaje sino precisar "Puntaje total: ##"), 
-        y los separé para que cada uno ocupe una línea para mayor diferenciación (que no salga todo el texto en la misma línea). 
-        También amplíe el ancho del marco de la imagen para ajustarlo a las fotos elegidas (que se vea el premio de Bottas, por ejemplo).
-        En cuanto al mapa, utilicé unas coordenadas centrales ubicadas en Estocolmo porque era un lugar aproximadamente a media distancia 
-        entre las ciudades de nacimiento de cada piloto (entre los marcadores). También usé el signo de una estrella en los marcadores, 
-        ya que se asocia a los piltos famosos. Así se puede ubicar los marcadores más fácilmente y de cerca.            
+        En la ventana pop up se observa el nombre del piloto, su foto, la escudería y el puntaje total que obtuvo esa temporada.             
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_9}</div>", unsafe_allow_html=True)
                 
-        with open("mapa_S.html", "r", encoding="utf-8") as mapa_S:
-                    html_content = mapa_S.read()
+        with open("mapa1.html", "r", encoding="utf-8") as mapa1:
+                    html_content = mapa1.read()
         
         components.html(html_content,height=600)
 
     #gráficos Yasuri
     
     if grafico_seleccionado == 'Nube de palabras':
-        st.subheader("☁️ Wordcloud La vegetariana")
+        st.subheader("☁️ Wordcloud - La vegetariana")
         texto_10 = """
         Este Wordcloud muestra la primera parte del libro La vegetariana (Hang Kang), las palabras mas grandes son las palabras que se repiten constantemente y las palabras mas pequeñas las que menos se repiten. Para crear este Wordcloud, primero se depuró el texto quitándole los stopwords, signos de puntuación y convirtiendo el texto a minúsculas.
         """
@@ -216,53 +208,66 @@ else:
 
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-                st.image("wordcloud.png", width=1000)
+                st.image("wordcloud_V.png", width=1000)
 
         
 
     elif grafico_seleccionado == 'Histograma':
-        st.subheader("📊 Histograma ATHM")
+        st.subheader("📊 Histograma - ATHM")
         texto_11 = """
-        El histograma muestra la distribución de los goles anotados como Local y  goles recibidos como Visitante del equipo Athlético Madrid. Anotaron más goles de los que recibieron. 
+        El histograma muestra la distribución de los goles anotados como Local y  goles recibidos como Visitante del equipo Atlético Madrid. 
+        Como equipo Local, el máximo de goles que anotó fue 5, en 1 partido.
+        El mínimo de goles que anotó como Local fue 0, en 2 partidos.
+        Como equipo Visitante, el máximo de goles que recibió fue 5, en un partido.
+        Como equipo Visitante, el mínimo de goles que recibió fue 0, en 6 partidos.
+        En total anotó 39 goles como equipo Local y recibió 27 goles como Visitante.
+        El Atlético Madrid tiene más goles anotados qué recibidos
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_11}</div>", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-            st.image("histograma.png", width=800)
+            st.image("histograma_ATHM.png", width=800)
 
     elif grafico_seleccionado == 'Pastel':
-        st.subheader("📊 Gráfico de pastel ATHM")
+        st.subheader("📊 Gráfico de pastel - ATHM")
         texto_7 = """
-        El gráfico de pastel muestra en procentajes el rendimiento del Athlético Madrid durante la temporada 2025-2026. Los resultados muestran que el equipo ganó mas del 50% de los partidos de la temporada, tuvo algunos partidos pérdidos y un porcentaje bajo de partidos empatados. 
+        El gráfico de pastel muestra en procentajes el rendimiento del Atlético Madrid durante la temporada 2025-2026. 
+        El Atlético Madrid como equipo Local ganó más de la mitad de los partidos que jugó.
+        El porcentaje de partidos perdidos supera el de partidos empatados.
+        Entre partidos empatados y partidos ganados hay más del 50% de diferencia.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
                 
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-             st.image("pastel_Barcelona.png", width=1000)
+             st.image("pastel_ATHM.png", width=1000)
 
     elif grafico_seleccionado == 'Gráfico de barras':
-        st.subheader("📊 Gráfico de barras ATHM")
+        st.subheader("📊 Gráfico de barras - ATHM")
         texto_8 = """
-       El gráfico de barras muestra el promedio de tarjetas amarrillas que el Athlético Madrid obtuvo durante la temporada 2025-26 como equipo visitante. Los resultados solo varían entre 2 y 3 tarjetas amarillas en promedio. 
+       El gráfico de barras muestra el promedio de tarjetas amarrillas que el Atlético Madrid obtuvo durante la temporada 2025-26 como equipo visitante. 
+       Hay 7 equipos que tienen el mismo promedio de tarjetas amarillas recibidas y es el máximo promedio.
+       Hay 12 equipos que tienen el mismo promedio mínimo de tarjetas amarillas recibidas.
+       El promedio no varía mucho, solo hay dos promedios: 2.0 y 3.0.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
         
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-                st.image("grafico_barras_s.png", width=1000)
+                st.image("barras_ATHM.png", width=1000)
         
     
     else:
-        st.subheader("🗺️ Distribución geográfica HAMILTON PEREZ")
+        st.subheader("🗺️ Mapa 2: Pilotos Hamilton y Perez - Fórmula 1 Temporada 2016")
         texto_12 = """
-        El mapa muestra el lugar de nacimiento de los pilotos L. Hamilton (Inglaterra) y L. Perez (México), con algunos datos como el nombre del piloto, el nombre de la escudería, el puntaje total que iobtuvieron en el F1-2016 y una imagen de de ellos. 
+        El mapa muestra el lugar de nacimiento de los pilotos L. Hamilton (Inglaterra) y L. Perez (México), con algunos datos como el nombre del piloto, 
+        el nombre de la escudería, el puntaje total que obtuvieron en el F1-2016 y una imagen de de ellos. 
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_12}</div>", unsafe_allow_html=True)
             
-        with open("mapa.html", "r", encoding="utf-8") as mapa:
-                html_content = mapa.read()
+        with open("mapa2.html", "r", encoding="utf-8") as mapa2:
+                html_content = mapa2.read()
     
         components.html(html_content,height=600)
 
