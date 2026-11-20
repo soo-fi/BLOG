@@ -167,7 +167,7 @@ else:
             
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-                st.image("pastel_Barcelona.png", width=1000)
+                st.image("pastel_Barcelona.png", width=1200)
 
     elif grafico_seleccionado == 'Gráfico de barras':
         st.subheader("📊 Gráfico de barras 1")
@@ -182,7 +182,7 @@ else:
         
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-                st.image("grafico_barras_s.png", width=1000)
+                st.image("grafico_barras_s.png", width=1200)
         
     else:
         st.subheader("🗺️ Mapa 1: Pilotos Hamilton y Bottas - Fórmula 1 Temporada 2016")
