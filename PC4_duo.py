@@ -22,7 +22,7 @@ opciones_2 = option_menu(
     menu_icon="cast", default_index=0, orientation="horizontal") # none
 
 if opciones_2 == 'Presentación':
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'> 🪶 Diario de código 🪶</h1>", unsafe_allow_html=True) #editar aspecto del texto / título del blog
+    st.markdown("<h1 style='text-align: center; font-size: 50px; color: black'> 🪶 Diario de código 🪶</h1>; font-family:'Georgia, serif", unsafe_allow_html=True) #editar aspecto del texto / título del blog
 
     # Alumno a
     col1, col2 = st.columns(2)
@@ -35,21 +35,24 @@ if opciones_2 == 'Presentación':
     A veces pinto con acuarelas, a veces hago crochet o toco piano. En este blog recopilamos lo 
     aprendido en el curso Pensamiento Computacional 2026-2 en la PUCP.  ¡Exploren la página para descubrir más!
     """
-    col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>", unsafe_allow_html=True)
+    col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>; font-family:'Georgia, serif", unsafe_allow_html=True)
 
     # Alumno b
     col1, col2 = st.columns(2)
     
     texto_2 = """
-    ¡Hola! Soy Yasuri, estudiante de Comunicación Audiovisual. Soy fan del K-pop (especialmente BTS) y no me gustan las fiestas porque me da sueño muy temprano, mis amigos dicen que soy un viejita en el cuerpo de una persona de 20 años. Esperamos les guste el blog que hicimos con tanta dedicación. ¡Esperamos aportar un granito de arena a este curso con nuestro proyecto!
+    ¡Hola! Soy Yasuri, estudiante de Comunicación Audiovisual. 
+    Soy fan del K-pop (especialmente BTS) y no me gustan las fiestas porque me da sueño muy temprano, mis amigos dicen que soy un viejita en el cuerpo de una persona de 20 años. 
+    Esperamos les guste el blog que hicimos con tanta dedicación.
+    ¡Esperamos aportar un granito de arena a este curso con nuestro proyecto!
     """
-    col1.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
+    col1.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>; font-family:'Georgia, serif", unsafe_allow_html=True)
     
     col2.image("ft_yasuri.png", caption='Yas', width=300)
     
 elif  opciones_2 == 'Experiencia':
 
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nuestra experiencia y videos</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nuestra experiencia y videos</h1>; font-family:'Georgia, serif", unsafe_allow_html=True)
 
     # Alumno a
     texto_3 = """ Antes de llevar este curso no conocía mucho del lenguaje de programación, lo asociaba
@@ -60,7 +63,7 @@ elif  opciones_2 == 'Experiencia':
     Pienso que aplicaré la programación en futuros proyectos donde sea necesario trabajar con grandes cuerpos de datos. 
     - Sofia
     """
-    st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_3}</div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_3}</div>; font-family:'Georgia, serif", unsafe_allow_html=True)
     
     # Formato YouTube
     # st.subheader("🎥 Título apropiado video 1")
@@ -82,7 +85,7 @@ elif  opciones_2 == 'Experiencia':
     texto_4 = """
     Cuando supe que iba a "programar" me asusté y pensé que sería muy difícil. Sin embargo, con la práctica me di cuenta de que no es muy complicado. La programación me ha enseñado a que es posible para cualquier persona usar esta herramienta y no solo las personas de ingeniería. Lo que me gusta de programar es que a través de solo códigos podamos hacer grandes cosas -Yasuri. 
     """
-    st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_4}</div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_4}</div>; font-family:'Georgia, serif", unsafe_allow_html=True)
         
     # Formato YouTube
     # st.subheader("🎥 Título apropiado video 1")
@@ -115,7 +118,7 @@ elif  opciones_2 == 'Experiencia':
             
 else:
 
-    st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>Nuestros trabajos</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>Nuestros trabajos</h1>; font-family:'Georgia, serif", unsafe_allow_html=True)
     
     # Aquí todos los integrantes deben poner sus 3 gráficos y su mapa en la lista 
     # y aumentar la estructura condicional como sea necesaria
@@ -130,7 +133,7 @@ else:
         Las palabras más grandes refieren a lugares, personajes y elementos importantes de la historia. Así, la nube
         de palabras nos da un primer vistazo general a las temáticas de la obra.
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_5}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_5}</div>; font-family:'Georgia, serif", unsafe_allow_html=True)
             
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -149,7 +152,7 @@ else:
         mientras que como visitante ha limitado los goles recibidos al mínimo (solo de 0 a 2). 
         En comparación, el equipo como local ha anotado más goles que los que ha recibido como visitante por partido. 
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>; font-family:'Georgia, serif", unsafe_allow_html=True)
         
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -163,7 +166,7 @@ else:
         Por el contrario, los partidos perdidos representan poco más de un tercio del total. 
         Los partidos empatados constituyen un mínimo de aproximadamente el 5%, lo que muestra una marcada diferencia en los resultados bien como Victoria o Derrota. 
         En general, se observan resultados muy favorables obtenidos por Barcelona como visitante a lo largo de la Liga, obteniendo predominantemente la Victoria.             """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>; font-family:'Georgia, serif"", unsafe_allow_html=True)
             
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -178,7 +181,7 @@ else:
         en promedio solo 2 tarjetas amarillas, mientras que los demás recibieron 3. En general, la cantidad de tarjetas amarillas que los equipos 
         visitantes recibieron por partido se mantuvo dentro de un rango constante y limitado.        
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>; font-family:'Georgia, serif", unsafe_allow_html=True)
         
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -190,7 +193,7 @@ else:
         El mapa muestra los lugares de nacimiento de los pilotos Hamilton y Bottas de la Fórmula 1. 
         En la ventana pop up se observa el nombre del piloto, su foto, la escudería y el puntaje total que obtuvo esa temporada.             
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_9}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_9}</div>; font-family:'Georgia, serif", unsafe_allow_html=True)
                 
         with open("mapa1.html", "r", encoding="utf-8") as mapa1:
                     html_content = mapa1.read()
@@ -204,7 +207,7 @@ else:
         texto_10 = """
         Este Wordcloud muestra la primera parte del libro La vegetariana (Hang Kang), las palabras mas grandes son las palabras que se repiten constantemente y las palabras mas pequeñas las que menos se repiten. Para crear este Wordcloud, primero se depuró el texto quitándole los stopwords, signos de puntuación y convirtiendo el texto a minúsculas.
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_10}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_10}</div>; font-family:'Georgia, serif", unsafe_allow_html=True)
 
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -223,7 +226,7 @@ else:
         En total anotó 39 goles como equipo Local y recibió 27 goles como Visitante.
         El Atlético Madrid tiene más goles anotados qué recibidos
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_11}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_11}</div>; font-family:'Georgia, serif", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -237,7 +240,7 @@ else:
         El porcentaje de partidos perdidos supera el de partidos empatados.
         Entre partidos empatados y partidos ganados hay más del 50% de diferencia.
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>; font-family:'Georgia, serif", unsafe_allow_html=True)
                 
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -251,7 +254,7 @@ else:
        Hay 12 equipos que tienen el mismo promedio mínimo de tarjetas amarillas recibidas.
        El promedio no varía mucho, solo hay dos promedios: 2.0 y 3.0.
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>; font-family:'Georgia, serif", unsafe_allow_html=True)
         
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -264,7 +267,7 @@ else:
         El mapa muestra el lugar de nacimiento de los pilotos L. Hamilton (Inglaterra) y L. Perez (México), con algunos datos como el nombre del piloto, 
         el nombre de la escudería, el puntaje total que obtuvieron en el F1-2016 y una imagen de de ellos. 
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_12}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_12}</div>; font-family:'Georgia, serif", unsafe_allow_html=True)
             
         with open("mapa2.html", "r", encoding="utf-8") as mapa2:
                 html_content = mapa2.read()
@@ -272,3 +275,4 @@ else:
         components.html(html_content,height=600)
 
     
+
