@@ -1,0 +1,11 @@
+[theme]
+primaryColor = "#DCB8CB"
+backgroundColor = "#CCD7E4"
+secondaryBackgroundColor = "#CEEAF7"
+textColor = "#0B0E0C"
+font = "Mulish"
+headingFont = "Mulish"
+
+[[theme.fontFaces]]
+family = "Mulish"
+url = "https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap"
