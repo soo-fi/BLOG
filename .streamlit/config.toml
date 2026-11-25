@@ -1,7 +1,7 @@
 [theme]
 primaryColor = "#DCB8CB"
-backgroundColor = "#CCD7E4"
-secondaryBackgroundColor = "#CCEAF7"
+backgroundColor = "#FFF5F5"
+secondaryBackgroundColor = "#E2B4BD"
 textColor = "#0B0E0C"
 codeFont = "Mulish"
 headingFont = "Mulish"
